@@ -1,6 +1,6 @@
 {
-  "name": "react-draft-wysiwyg",
-  "version": "1.15.0",
+  "name": "@scopetwo/react-draft-wysiwyg",
+  "version": "1.16.0-scopetwo",
   "description": "A wysiwyg on top of DraftJS.",
   "main": "dist/react-draft-wysiwyg.js",
   "repository": {
@@ -77,7 +77,9 @@
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "check": "npm run lint && npm run flow",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "login": "npm login --registry=http://192.168.8.11:4873 --scope=@scopetwo",
+    "publish": "npm publish --registry http://192.168.8.11:4873 --tag latest"
   },
   "license": "MIT"
 }
